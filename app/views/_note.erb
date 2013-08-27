@@ -1,0 +1,23 @@
+<div class="view_note">
+  <% if note %>
+    <h2>Your selected note is below...</h2>
+
+    <table>
+      <tr>
+        <th width="80px">Title</th>
+        <th width="140px">Contents</th>
+      </tr>
+      <tr>
+        <td><%=note.title%></td>
+        <td><%=note.content%></td>
+      </tr>
+    </table>
+    <a href = '/<%=note.id%>/edit'>Edit this note</a>
+    <br>
+    <a href = '/<%=note.id%>/delete'>Delete this note</a>
+
+  <% else %>  
+    <p>Note not found.</p>  
+
+  <% end %>
+</div>
