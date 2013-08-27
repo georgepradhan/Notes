@@ -14,5 +14,13 @@
         <td><%=@note.content%></td>
       </tr>
     </table>
+    <a href = '/<%=@note.id%>/edit'>Edit this note</a>
+    <br>
+    <a href = '/<%=@note.id%>/delete'>Delete this note</a>
+
+  <% else %>  
+    <p>Note not found.</p>  
+
   <% end %>
+
 </div>
