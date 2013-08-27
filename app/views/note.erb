@@ -3,6 +3,16 @@
 
   <% if @note %>
     <h2>Your selected note is below...</h2>
-    <t
 
+    <table>
+      <tr>
+        <th width="80px">Title</th>
+        <th width="140px">Contents</th>
+      </tr>
+      <tr>
+        <td><%=@note.title%></td>
+        <td><%=@note.content%></td>
+      </tr>
+    </table>
+  <% end %>
 </div>
