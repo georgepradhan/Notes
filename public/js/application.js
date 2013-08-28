@@ -33,7 +33,6 @@ $(document).ready(function() {
       type: "get",
       url: url.href
     }).done(function(server_response){
-      console.log(server_response);
       $('.view_note').remove();
       $('.container').append(server_response)
     }).fail(function(){
@@ -41,5 +40,18 @@ $(document).ready(function() {
     });
   });
 
+  $(document).on('click', '.view_note a', function(e){
+    e.preventDefault();
+    var url = {href: this["href"]};
+    $.ajax({
+      type: "get",
+      url: url.href
+    }).done(function(server_response){
+      $('.view_note').remove();
+      $('.container').append(server_response)
+    }).fail(function(){
+      console.log('view note click fail');
+    });
+  });
 
 });
