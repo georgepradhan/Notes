@@ -1,14 +1,17 @@
 <div class="container">
   <h1>Welcome to Notes!</h1>
 
-  <% if @notes %>
   <h2>Below are your notes...</h2>
+  
     <ul id="notes">
+
+  <% if @notes %>
       <% @notes.each do |note| %>
         <li><a href='/<%=note.id%>'><%= note.title %></a></li>
       <% end %>
-    </ul>
   <% end %>
+
+    </ul>
 
   <a id="create_new" href='/new'>Create a new note</a>
 

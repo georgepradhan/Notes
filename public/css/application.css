@@ -7,3 +7,26 @@
 th {
   text-align: left;
 }
+
+/*#partial_new {
+  position: fixed;
+  top: 59px;
+  left: 50%;
+  margin-left: -197px;
+  background-color: #acacac;
+  padding: 20px;
+  border-radius: 9px;
+  box-shadow: 1px 1px 14px #a6a6a6;
+  z-index: 3
+}
+*/
+/* 
+things to look up: 
+z index
+css tutorial
+use javascript to append a div that is opaque (black but can see through)
+takes up whole screen
+position screen
+color: rgba instead of hex
+background-color: rgba(255,255,255, 0.4);
+*/
