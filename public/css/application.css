@@ -8,18 +8,19 @@ th {
   text-align: left;
 }
 
-/*#partial_new {
+#partial_new {
   position: fixed;
   top: 59px;
   left: 50%;
   margin-left: -197px;
-  background-color: #acacac;
+  background-color: #e569a2;
   padding: 20px;
   border-radius: 9px;
   box-shadow: 1px 1px 14px #a6a6a6;
   z-index: 3
 }
-*/
+
+
 /* 
 things to look up: 
 z index
